@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fORMULARIO</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <img src="IMG/incap.jpeg" width="100" height="100" alt="incap">
+        <h1>FORMULARIOS Y LISTAS HTML</h1>
+    </header>
+    <NAv>
+    <ul>
+        <li>Home</li>
+        <li>productos</li>
+        <li>servicios</li>
+        <li>contacto</li>
+    </ul>
+    </NAv>
+    <section>
+        <form action="datos.php" method="post">
+            <!-- seccion ingresar nombre -->
+            <label for="">Nombre completo</label>
+                <input type="text" name="nombre" placeholder="&#97656; ingrese nombre completo" required ><br><br>
+                <hr>
+
+                <!-- seccion ingresar email -->
+            <label for="">email:</label>
+                <input type="email" name="email" placeholder="&#9746; ingrese su email" required ><br><br>
+                <hr>
+
+                <!-- seccion ingresar contraseña -->
+            <label for="">contraseña:</label>
+            <input type="password" name="contraseña" placeholder="&#9745; ingrese su contraseña" required ><br><br>
+            <hr>
+            <!-- seccion de hobbies -->
+            <label for="">selecciona tus hobbies </label>
+            <br>
+            <input type="checkbox">cine <br>
+            <input type="checkbox">lectura <br>
+            <input type="checkbox">deporte <br>
+            <br>
+            <hr>
+            <!-- seccion de estado civil -->
+            <label for="">estado civil:</label><br>
+            <input type="radio" value="casado" name="estcivil">casado(a) <br>
+            <input type="radio" value="soltero" name="estcivil">soltero(a) <br>
+            <input type="radio" value="viudo" name="estcivil">viudo(a) <br>
+            <br><br>
+            <hr>
+            <!-- seccion opcion de lista -->
+            <label for="">PROGRAMAS TECNICOs</label>
+            <select name="" id="">
+                <option value="">Seleccion de programa </option>
+                <option value="">Sistemas</option>
+                <option value="">Diseño grafico</option>
+                <option value="">Contabilidad</option>
+                </select>
+                <br><br>
+                <hr>
+                <!-- seccion comentarios -->
+                <label for="">comentarios</label>
+                <textarea name="" id="" cols="40" rows="5"></textarea>
+                <br><br>
+                <hr>
+                <!-- seccion botones formulario -->
+                <button type="submit">ENVIAR</button>
+                <button type="reset">CANCELAR</button>
+                <br><br>
+            </form>
+                </section>
+                <!-- seccion pie de pagina -->
+            <footer>
+                <p>Derechos resevados &copy;2023&#64;Dana</p>
+            </footer>
+</body>
+</html>
